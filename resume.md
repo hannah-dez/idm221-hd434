@@ -1,11 +1,15 @@
 # Resume
+
 Hannah Desmond (She/Her)
+
 ## Education
+
 Drexel University Philadelphia, PA
 Bachelor of Science in Anticipated Graduation: June 2027
 User Experience and Interface Design GPA 3.73
 
 ## Experience
+
 Steve and Kate's Camp Pasadena Pasadena, CA
 Camp Counselor July 2023 to August 2023
 - Worked with a team of counselors, assessing where I was needed and adapting based on those needs.
@@ -25,14 +29,17 @@ Product Design September 2022 to December 2022
 - Communicated with team members on when to complete each part in order to effectively finish our project by the deadline.
 
 ## Skills
+
 Operating Systems: Windows
 Software: Microsoft Office, Adobe Photoshop, Adobe Illustrator, Adobe Bridge, Arduino IDE, Figma, After Affects, Adobe Audition, HTML, CSS
 
 ## Honors and Awards
+
 Dean's List December 2022
 Ap Scholar College Board, May 2021
 
 ## Relevant Coursework
+
 - User Interface Design I and II
 - Interaction Design- Micro Interactions
 - Web Design I
