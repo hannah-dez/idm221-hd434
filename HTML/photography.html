@@ -1,5 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>/* Dropdown Button */
+        .dropbtn {
+          background-color: #FFF48F;
+          color: rgb(0, 0, 0);
+          padding: 16px;
+          font-size: 15px;
+          border: none;
+        }
+        
+        .menuitem {
+            background-color: #FFF48F;
+          color: rgb(0, 0, 0);
+          padding: 16px;
+          font-size: 15px;
+          border: none;
+          position: relative;
+          display: inline-block;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #FFE350;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #FFE350;}
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {background-color:#FFE350;}</style>
 <head>
     <head>
         <meta charset="UTF-8">
@@ -8,53 +59,48 @@
     </head>
     <header>
         <h1>Hannah Desmond</h1>
-        <div id=menu><ul>
-            <li>About</li>
-            <li>
-            <!--
-            drop down menu for portfolio
-            -->
-            <label for="Portfolio"> </label> 
-            <select name="portfolio" id="portfolio"> 
-                <option value="Graphic-Design">Portfolio</option>
-                <option value="Graphic-Design">Graphic-Design</option> 
-                <option value="Photography">Photography</option> 
-                <option value="Case-Studies">Case-Studies</option> 
-            </select>
-            </li>
-            <li>Resume</li>
-        </ul>
+        <div id= "menu">
+            <div class="menuitem"><a href="../HTML/about.html">About</a></div>
+                <div class="dropdown">
+                  <button class="dropbtn"><a href="../HTML/portfolio.html">Portfolio</a></button>
+                    <div class="dropdown-content">
+                      <a href="../HTML/design.html">Design</a>
+                      <a href="../HTML/photography.html">Photography</a>
+                      <a href="../HTML/index.html">Case Studies</a>
+                    </div>
+                  </div>
+            <div class="menuitem"><a href="../HTML/resume.html">Resume</a></div>
         </div>
     </header>
 <body>
     <main>
-        <h1>Photography</h1>
-        <div id="photographydex"><ul>
-            <li>Landscapes</li>
-            <li>Portraits</li>  
-            <li>A Married Life</li>
+        <h1 id="phototop">Photography</h1>
+        <div id="photographynav"><ul>
+            <li><a href="#landscapes">Landscapes</a></li>
+            <li><a href="#windowlight">Portraits</a></li>  
+            <li><a href="#married">A Married Life</a></li>
         </ul></div>
         <p>In the winter of 2022-2023 I took a photography class. These photos were all taken using a digital Canon DSLR camera. I edited these photos with Adobe Bridge and Photoshop.</p>
-        <h2>Landscape</h2>
+        <h2 id="landscapes">Landscapes</h2>
         <img src="../Content/photography/O_Landscape_1.png">
         <img src="../Content/photography/O_Landscape_2.png">
         <img src="../Content/photography/O_Landscape_3.png">
         <img src="../Content/photography/O_Landscape_4.png">
         <img src="../Content/photography/O_Landscape_5.png">
         <img src="../Content/photography/O_Landscape_6.png">
-        <p class="button">Back To Top</p>
-        <h2>Portraits: Window Light</h2>
+        <p class="button"><a href="#phototop">Back To Top</a></p>
+        <h2 id="windowlight">Portraits: Window Light</h2>
         <img src="../Content/photography/O_WindowLight_9.png">
         <img src="../Content/photography/O_WindowLight_7.png"><img src="../Content/photography/O_WindowLight_8.png">
         <img src="../Content/photography/O_WindowLight_10.png"><img src="../Content/photography/O_WindowLight_11.png">
         <div id="windowcarousel"><img src="../Content/photography/O_WindowLight_1.png"><img src="../Content/photography/O_WindowLight_2.png"><img src="../Content/photography/O_WindowLight_3.png"><img src="../Content/photography/O_WindowLight_4.png"><img src="../Content/photography/O_WindowLight_5.png"><img src="../Content/photography/O_WindowLight_6.png"></div>
         <p class="caption">More Window Light</p>
         <p class="caption">Model: Bea Baxley</p>
-        <p class="button">Back To Top</p>
-        <h2>Portraits: A Married Life</h2>
+        <p class="button"><a href="#phototop">Back To Top</a></p>
+        <h2 id="married">Portraits: A Married Life</h2>
         <div id="marriedcarousel"><img src="../Content/photography/O-A-Married-Life_1.png"><img src="../Content/photography/O-A-Married-Life_2.png"><img src="../Content/photography/O-A-Married-Life_3.png"><img src="../Content/photography/O-A-Married-Life_4.png"><img src="../Content/photography/O-A-Married-Life_5.png"><img src="../Content/photography/O-A-Married-Life_6.png"></div>
         <p class="caption">Explore More</p>
-        <p class="button">Back To Top</p>
+        <p class="button"><a href="#phototop">Back To Top</a></p>
     </main>
     <footer>@hannah_dez_  | hdesmond913.wordpress.com | linkdin</footer>
 </body>
