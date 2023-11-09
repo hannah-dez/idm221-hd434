@@ -25,6 +25,16 @@
         font-size: 1em;
         text-align: left;
     }
+
+    .button{
+        color:#FFF48F;
+        font-size: 1em;
+        text-align:center;
+        background-color: #5E763B;
+        padding: 15px 25px;
+        
+        
+    }
 /* Dropdown Button */
         .dropbtn {
           background-color: #FFF48F;
