@@ -25,16 +25,17 @@
         font-size: 1em;
         text-align: left;
     }
-
+/*buttons!!*/
     .button{
         color:#FFF48F;
         font-size: 1em;
         text-align:center;
         background-color: #5E763B;
         padding: 15px 25px;
-        
-        
+        border:none;
+        border-radius: 25px;
     }
+
 /* Dropdown Button */
         .dropbtn {
           background-color: #FFF48F;
@@ -86,3 +87,5 @@
         
         /* Change the background color of the dropdown button when the dropdown content is shown */
         .dropdown:hover .dropbtn {background-color:#FFE350;}
+
+        
