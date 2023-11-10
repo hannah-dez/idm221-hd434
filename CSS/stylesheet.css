@@ -25,6 +25,14 @@
         font-size: 1em;
         text-align: left;
     }
+
+    :link{
+      color:#5E763B;
+      text-decoration: none;
+    }
+    :visited{
+      color:#5E763B;
+    }
 /*buttons!!*/
     .button{
         color:#FFF48F;
@@ -38,7 +46,7 @@
 
 /* Dropdown Button */
         .dropbtn {
-          background-color: #FFF48F;
+          background-color: #FFE350;
           color: rgb(0, 0, 0);
           padding: 16px;
           font-size: 15px;
@@ -46,7 +54,7 @@
         }
         
         .menuitem {
-            background-color: #FFF48F;
+            background-color: #FFE350;
           color: rgb(0, 0, 0);
           padding: 16px;
           font-size: 15px;
@@ -87,5 +95,18 @@
         
         /* Change the background color of the dropdown button when the dropdown content is shown */
         .dropdown:hover .dropbtn {background-color:#FFE350;}
-
+#title {
+  background-color:#FFF48F;
+  color:black;
+  font-size:2em;
+  padding: 57px;
+  margin:0;
+  text-decoration: none;
+}
+#menu {
+  background-color: #FFE350;
+  padding: 10px;
+  margin:0;
+  text-align: center;
+}
         
