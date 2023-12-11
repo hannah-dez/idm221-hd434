@@ -53,15 +53,17 @@
   margin: 18px;
 }
 
-    :link{
-      color:#5E763B;
-      text-decoration: none;}
-    :visited{
-      color:#5E763B;}
+:link{
+  color:#5E763B;
+  text-decoration: none;
+}
+:visited{
+  color:#5E763B;
+}
 
-    img{
-      border-radius: 25px;}
-      
+img{
+  border-radius: 25px;
+}
 
 .pagelink{
   color:#FFF48F;
@@ -71,9 +73,7 @@
         padding: 15px 25px;
         border:none;
         border-radius: 25px;}
-.image-title{
-  font-weight: lighter;
-  text-align: center;}
+
 .button{
     color:#FFF48F;
     font-size: 1em;
@@ -98,6 +98,21 @@ footer{
   font-size: 0.875em;
   color:#5E763B;
   margin: -1px 18px 18px;
+}
+
+h1 p{
+  margin: 20px 0 14px;
+}
+
+h2 p{
+  margin:14px;
+}
+
+h2 h3{
+  margin-top: 20px;
+}
+h3 p{
+  margin: 6px;
 }
     /* MENU*/
 
@@ -223,7 +238,7 @@ footer{
 
 .carousel-container {
   width: 90%;
-  margin: auto;
+  margin: 14px auto;
   overflow: hidden;
   position: relative;
 }
@@ -307,47 +322,78 @@ footer{
 }
 
 /*DESIGN*/
+.design-intro{
+  display: flex;
+  justify-content: space-evenly;
+}
+.designnav ul{
+  list-style: none;
+}
+.designnav a{
+  margin:7px 10px 7px -35px;
+  display: block;
+  background-color: #5E763B;
+  height: 50px;
+  width: 95px;
+  color: #FFF48F;
+  border-radius: 25px;
+  line-height: 25px; /* Adjust line-height to center text vertically */
+  text-align: center; /* Center text horizontally */
+  text-decoration: none;
+}
+.intro-p{
+  margin: auto 5px;
+  background-color: #FFF48F;
+  padding: 0 10px;
+  border-radius: 25px;
+}
+
 .graffiti-img{
   background-color: #FFF48F;
   border-radius:35px;
   display:block;
-  margin:auto;
+  margin:7px auto;
   max-width:343px;
-  padding:35px 10px;
+  padding:55px 10px 25px;
 }
 .constructivism-img{
   background-color: #C8DAA6;
   border-radius: 35px;
   display:block;
-  margin:auto;
+  margin:7px auto 24px;
   max-width:343px;
-  padding:35px 10px;
+  padding:55px 10px 25px;
 }
 .redesign-models{
   background-color:#C8DAA6;
   display:block;
-  margin:18px 0 10px;
+  margin:18px auto 10px;
   max-width:343px;
-  padding: 12px;}
+  padding: 12px;
+}
 .persepctive-anim{
   background-color:#C8DAA6;
   display:block;
-  margin:6px;
+  margin: 12px auto;
   max-width:343px;
-  padding:15px 10px;
+  padding:15px 15px 55px;
+}
+.perspective-cap{
+  margin-top:-45px;
 }
 .symmetry{
   background-color:#FFF48F;
   display:block;
-  margin:0;
   max-width:140px;
-  padding:15px;
+  padding:15px 15px 55px;
+  margin: 12px auto;
 }
 .expressiveline{
   background-color:#FFF48F;
   max-width:140px;
   display:block;
-  padding:15px;
+  padding:15px 15px 55px;
+  margin: 12px auto;
 }
   .line-sidebyside{
     display:flex;
@@ -357,6 +403,8 @@ footer{
 .line-sidebyside-cap{
   display:flex;
   justify-content: space-around;
+  margin-top:-55px;
+  margin-left: 12px;
 }
 
 .value-content-p{
@@ -369,31 +417,192 @@ footer{
 .value-content{
   max-width: 119px;
   display:block;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 .value-scale{
   display: flex;
   justify-content: space-around;
 }
 .caption-center{
-  margin: 10px auto;
   text-align:center;
 }
 .value{
   background-color:#C8DAA6;
   display: block;
   border-radius:25px;
-  padding: 15px;
-  margin: 10px;
+  padding: 15px 15px 55px;
+  margin: 24px auto;
 }
-.notan{display:flex;
-  justify-content: space-around;}
+.value-cap{
+  margin-top: -60px;
+}
 
-.notan-image{
-  height:279px;
-  width:210px;
+.notan {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color:#FFF48F;
+  padding: 15px 0 55px;
+  border-radius:25px;
+  margin:42px 10px 6px;
 }
-.notan-image-small{
-  height:90px;
-  width:90px;
+
+.notan-image {
+  display: block;
+  justify-content:space-around;
+  width: 210px;
+  height: 279px;
+  margin-right:20px;
+}
+
+.notan-image-small {
+  display: block;
+  justify-content:space-around;
+  width: 90px;
+  height: 90px;
+}
+
+.notan .notan-image-small:not(:first-child) {
+  margin-top: 10px; /* Adjust as needed for spacing between the small images */
+}
+
+.notan-cap{
+  margin-top: -55px;
+}
+.video{
+  height: 258px;
+  width: 343px;
+  display:block;
+  justify-content: center;
+  background-color: #C8DAA6;
+  padding: 10px 10px 55px;
+  border-radius: 25px;
+  margin: 48px auto 6px;
+}
+
+.video-cap{
+  margin-top: -55px;
+}
+
+.post-video{
+  margin-top:54px;
+}
+
+.image-title{
+  text-align: center;
+  margin-bottom: -60px;
+  margin-top: 46px;
+}
+
+.polygraph{
+  display: flex;
+  justify-content:center;
+  background-color:#FFF48F;
+  border-radius: 25px;
+  padding:15px 5px 55px;
+  margin: auto;
+  max-width: 360px;
+}
+
+.poly-content-1{
+max-width: 178px;
+margin-right:15px;
+}
+
+.poly-content-2{
+  max-width: 117px;
+  max-height:185PX;
+  margin-top:18px;
+  margin-left: 15px;
+}
+.poly-cap{
+  margin: -40px auto 15px;
+}
+
+.color-cap{
+  margin: 114px auto -80px;
+}
+
+.color-bottom-cap{
+  margin: 15px;
+}
+.color{
+  background-color:#C8DAA6;
+  display: block;
+  border-radius:25px;
+  padding: 55px 15px 55px;
+  margin: 24px auto;
+}
+
+.color-scale{
+  display:flex;
+  justify-content: space-around;
+}
+
+.color-design{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 9px;
+}
+
+.color-content-s{
+  max-width:80px;
+  max-height:55px;
+}
+
+.color-content{
+  width:162px;
+}
+
+.transparency{
+  width:276px;
+  height: 276px;
+  background-color:#FFF48F;
+  border-radius: 25px;
+  padding:25px 25px 55px;
+  display: block;
+  margin:auto;
+}
+
+.transparency-cap{
+  margin-top:-35px;
+}
+
+.button-spacing-d{
+  margin-top: 20px;
+}
+
+.posters-title{
+  margin-top: 36px;
+}
+
+.posters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px; /* Adjust the max-width based on your design */
+  margin: 25px auto;
+}
+
+.poster-tall,
+.poster-short {
+  margin: 8px; /* Adjust the margin based on your design */
+}
+
+.poster-tall {
+  width: 162px;
+  height: 227px;
+}
+
+.poster-short {
+  width: 169px;
+  height: 169px;
+}
+
+.poster-background{
+  background-color: #C8DAA6;
+  width: 100%;
+  height: 693px;
+  margin:-708px auto 24px;
+  border-radius: 35px;
 }
