@@ -74,8 +74,9 @@ img{
         padding: 15px 25px;
         border:none;
         border-radius: 25px;
-        width: 60%;
-        margin:130px auto -153px;
+        width: 80%;
+        display: block;
+        margin:130px auto -143px;
         position:relative;
         z-index:1;
         filter:drop-shadow(-10px 10px 0.5 black);
