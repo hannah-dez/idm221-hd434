@@ -65,14 +65,21 @@ img{
   border-radius: 25px;
 }
 
-.pagelink{
+.pagelink {
   color:#FFF48F;
-        font-size: 1em;
+        font-size: 1.05em;
         text-align:center;
+        font-family:'inder', serif;
         background-color: #FFE350;
         padding: 15px 25px;
         border:none;
-        border-radius: 25px;}
+        border-radius: 25px;
+        width: 60%;
+        margin:130px auto -153px;
+        position:relative;
+        z-index:1;
+        filter:drop-shadow(-10px 10px 0.5 black);
+      }
 
 .button{
     color:#FFF48F;
@@ -245,6 +252,7 @@ h3 p{
 
 .carousel {
   display: flex;
+  align-items: center;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -258,6 +266,7 @@ h3 p{
 .carousel-item {
   width: 100%;
   flex: 0 0 auto;
+  margin: 0 auto;
 }
 
 .carousel-button {
@@ -606,3 +615,138 @@ margin-right:15px;
   margin:-708px auto 24px;
   border-radius: 35px;
 }
+<<<<<<< Updated upstream:css/stylesheet.css
+=======
+
+/*FOCUST*/
+.focust-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:14px auto;
+  background-color: #C8DAA6;
+  padding:25px;
+  border-radius: 25px;
+}
+
+.beforeafter{
+  display: flex;
+  justify-content: space-around;
+}
+.beforeafter img{
+  height: 345px;
+  width: auto;
+}
+
+.beforeafter-cap{
+  margin:60px auto -34px;
+}
+
+/*INDEX*/
+.index-pic{
+  width:auto;
+  height:246px;
+  display: block;
+  margin: auto;
+  filter:drop-shadow(-10px 10px rgba(200 218 166));
+}
+
+.index-footer{
+  margin-top:36px;
+}
+
+/*PHOTOGRAPHY*/
+.photo-intro{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.photonav ul{
+  list-style: none;
+}
+.photonav a{
+  margin:2px 10px 4px -35px;
+  display: block;
+  background-color: #5E763B;
+  height: 50px;
+  width: 95px;
+  color: #FFF48F;
+  border-radius: 25px;
+  line-height: 18px;
+  text-align: center; 
+  text-decoration: none;
+  padding-top:10px;
+  text-align:center;
+}
+
+.intro-photo{
+  margin: auto 5px;
+  background-color:#FFF48F;
+  padding: 0 10px;
+  border-radius: 25px;
+  text-wrap:pretty;
+}
+
+.landscapes img{
+  width:315px;
+  display: block;
+  margin: 35px auto;
+}
+
+.shadow-one{
+  filter:drop-shadow(-10px 10px rgba(255, 244, 143, 1));
+  display:block;
+}
+.shadow-two{
+  filter:drop-shadow(10px -10px rgba(200, 218, 166, 1));
+}
+
+.window-top img{
+  width: 281px;
+  height: 377px;
+  display: block;
+  margin: 25px auto;
+  filter: drop-shadow(-10px 10px rgba(255, 244, 143, 1));
+}
+
+.four-item{
+  height: 220px;
+  margin: 7px 10px;
+  
+}
+.top-row{
+  display: flex;
+  justify-content: space-around;
+}
+.bottom-row{
+  display: flex;
+  justify-content: space-around;
+}
+.four-window{
+ background-color: #C8DAA6;
+ padding: 15px;
+ margin: 15px auto;
+ border-radius: 25px;
+}
+
+.window-wideone{
+  width: 345px;
+  display: block;
+  float: left;
+  margin-top:15px;
+  filter: drop-shadow(15px 0 rgba(255, 244, 143, 1));
+}
+.window-widetwo{
+  width: 345px;
+  display: block;
+  float: right;
+  margin-top:15px;
+  filter:drop-shadow(-15px 0 rgba(200, 218, 166, 1));
+}
+
+.window-cap{
+  display: block;
+  margin: 45px auto 15px;
+  text-align: center;
+}
+>>>>>>> Stashed changes:CSS/stylesheet.css
