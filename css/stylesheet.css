@@ -775,3 +775,17 @@ margin-right:15px;
   border-radius: 25px;
   padding: 11px;
 }
+
+.ug-cap{
+  display: block;
+  margin: -10px auto 15px;
+}
+
+.ug-transparent{
+  width: 345px;
+  display: block;
+  margin: 15px auto;
+  background-color: #C8DAA6;
+  border-radius: 25px;
+  padding: 25px 15px;
+}
