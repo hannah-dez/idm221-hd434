@@ -328,6 +328,9 @@ h3 p{
 }
 
 /*DESIGN*/
+.design-head{
+  margin-top: 36px;
+}
 .design-intro{
   display: flex;
   justify-content: space-evenly;
