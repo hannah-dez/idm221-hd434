@@ -1,34 +1,35 @@
 // ABOUT CAROUSEL
 const carousel = document.querySelector('.carousel');
 const carouselItems = document.querySelectorAll('.carousel-item');
-let aboutCarouselIndex = 0;
+let CarouselIndex = 0;
 
-function showAboutSlide(index) {
+function showSlide(index) {
   if (index < 0) {
-    aboutCarouselIndex = carouselItems.length - 1;
+    CarouselIndex = carouselItems.length - 1;
   } else if (index >= carouselItems.length) {
-    aboutCarouselIndex = 0;
+    CarouselIndex = 0;
   } else {
-    aboutCarouselIndex = index;
+    CarouselIndex = index;
   }
 
-  const translateValue = -aboutCarouselIndex * 100 + '%';
+  const translateValue = -CarouselIndex * 100 + '%'; // Negate the value
   carousel.style.transform = `translateX(${translateValue})`;
 }
 
-function nextAboutSlide() {
-  showAboutSlide(aboutCarouselIndex + 1);
+
+function nextSlide() {
+  showSlide(CarouselIndex - 1);
 }
 
-function prevAboutSlide() {
-  showAboutSlide(aboutCarouselIndex - 1);
+function prevSlide() {
+  showSlide(CarouselIndex + 1);
 }
 
 // Attach event listeners to the buttons
-const prevAboutButton = document.querySelector('.carousel-button.prev.about');
-const nextAboutButton = document.querySelector('.carousel-button.next.about');
+const prevButton = document.querySelector('.carousel-button.prev');
+const nextButton = document.querySelector('.carousel-button.next');
 
 
-prevAboutButton.addEventListener('click', prevAboutSlide);
-nextAboutButton.addEventListener('click', nextAboutSlide);
+prevButton.addEventListener('click', prevSlide);
+nextButton.addEventListener('click', nextSlide); 
 
