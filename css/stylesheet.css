@@ -127,7 +127,7 @@ h3 p{
         .dropbtn {
           background-color: #FFE350;
           color: #5E763B;
-          padding: 16px;
+          padding: 1em;
           font-size: 1em;
           border: none;
         }
@@ -136,7 +136,7 @@ h3 p{
           background-color: #FFE350;
           color: #5E763B;
           padding: 16px;
-          font-size: 15px;
+          font-size: 1em;
           border: none;
           position: relative;
           display: inline-block;}
