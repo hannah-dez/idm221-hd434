@@ -123,7 +123,9 @@ h3 p{
   margin: 6px;
 }
     /* MENU*/
-
+    .active {
+      background-color: #FFE350;
+    }
         .dropbtn {
           background-color: #FFE350;
           color: #5E763B;
