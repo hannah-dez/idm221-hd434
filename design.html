@@ -5,6 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var dropdowns = document.querySelectorAll('.dropdown');
+        
+          dropdowns.forEach(function(dropdown) {
+            dropdown.addEventListener('click', function() {
+              // Close all other dropdowns
+              dropdowns.forEach(function(d) {
+                if (d !== dropdown) {
+                  d.classList.remove('active');
+                }
+              });
+        
+              // Toggle the active class on the clicked dropdown
+              dropdown.classList.toggle('active');
+            });
+          });
+        
+          // Close dropdowns when clicking outside
+          document.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropdown')) {
+              dropdowns.forEach(function(dropdown) {
+                dropdown.classList.remove('active');
+              });
+            }
+          });
+        });
+        </script>
 </head>
 <body>
     <header>
@@ -56,7 +85,7 @@
               
                     <div class="image-title">
                         <p class="caption">
-                            Cunstructivism
+                            Constructivism
                         </p>
                     </div>
                     <img class="constructivism-img" 
@@ -89,7 +118,7 @@
                         <div class="button">View Figma File</div>
                 </a>
 
-                <h3>Origional Redesign for Ultimate Guitar</h3>
+                <h3>Original Redesign for Ultimate Guitar</h3>
                     <p class="paragraph">
                         Before I had my final redesign of Ultimate Guitar, I made this draft design. I ended up scratching it and going in a completely different direction for my Case Study.
                     </p>
